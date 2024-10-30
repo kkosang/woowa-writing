@@ -1,6 +1,9 @@
 > 이미지 처리
 >
-이미지 파일의 종류에 대해 알아보고 안드로이드에서 이미지를 처리하는 방법에 대해 작성하였습니다.
+
+이 글은 안드로이드 애플리케이션 환경에서 이미지 처리 하는 과정에 대해 설명합니다.
+이미지 처리 과정에 대한 이해를 돕기 위해 이미지 파일의 종류에 대해 간략하게 소개하고 로딩과 캐싱 방식에 대해 설명합니다.
+마지막으로 대표적인 라이브러리 3가지(Glide, Coil, Picasso)에 대해 알아보고 소개합니다.
 
 > 목차
 >
@@ -27,19 +30,23 @@
 
 ### 종류
 
-이미지 파일은 크게 손실 압축(Lossy Compression)과 무손실 압축(Lossless Compression)으로 구분 될 수 있습니다.
+이미지 파일은 압축 방식에 따라 손실 압축(Lossy Compression)과 무손실 압축(Lossless Compression)으로 구분 할 수 있습니다.
 
-- 손실 압축
+- **손실 압축 (Lossy Compression)**
 
   이미지 품질을 낮추고 파일 크기를 크게 줄이는 방식입니다.
 
-  이미지 파일을 복원했을 때, 압축 전 파일에서 일부 정보가 누락됩니다.
+  파일 크기를 줄이기 위해 일부 데이터를 영구적으로 삭제하여 저장하기 때문에 파일 복원 시 일부 정보가 누락됩니다.
 
-- 무손실 압축
+  대표적으로 JPEG 이미지 포맷이 손실 압축 방식을 사용합니다.
+
+- **무손실 압축**
 
   이미지 품질을 유지하면서 데이터를 압축하는 방식입니다.
 
-  이미지 파일을 복원했을 때, 압축 전 파일과 동일합니다.
+  원본 데이터를 손실 없이 압축하므로 압축 해제 시 원본 파일과 동일하게 복구됩니다.
+
+  대표적으로 PNG 파일이 비손실 압축 방식을 사용합니다.
   ![technical1.png](/Users/kkosang/woowa/woowa-writing/technical1.png)
 
   ### 이미지 파일의 확장자 예시
@@ -59,6 +66,8 @@
     - GIF
         - 256색으로 제한된 이미지를 저장합니다.
         - 짧은 애니메이션과 투명도를 지원합니다.
+
+안드로이드 환경에서도 이미지 파일 형식을 적절히 활용하여 로딩 속도와 이미지 품질을 상황에 맞게 최적화할 수 있습니다.
 
 # 이미지 처리 방식
 
@@ -315,12 +324,12 @@ Coil과 마찬가지로 Test1에서는 Garbage Collection이 4번 등장하였�
 
 - 블로그
 
-    https://d2.naver.com/helloworld/429368
+  https://d2.naver.com/helloworld/429368
 
 - 공식 문서
 
-    https://bumptech.github.io/glide/doc/getting-started.html
+  https://bumptech.github.io/glide/doc/getting-started.html
 
-    https://coil-kt.github.io/coil/upgrading_to_coil3/
+  https://coil-kt.github.io/coil/upgrading_to_coil3/
 
-    https://github.com/square/picasso
+  https://github.com/square/picasso
