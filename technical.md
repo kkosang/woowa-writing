@@ -47,7 +47,7 @@
   원본 데이터를 손실 없이 압축하므로 압축 해제 시 원본 파일과 동일하게 복구됩니다.
 
   대표적으로 PNG 파일이 비손실 압축 방식을 사용합니다.
-  ![technical1.png](/Users/kkosang/woowa/woowa-writing/technical1.png)
+  ![technical1.png](technical1.png)
 
   ### 이미지 파일의 확장자 예시
 
@@ -308,7 +308,7 @@ Test1과 Test2에서 Garbage Collection이 1번 등장 하였습니다.
 
 메모리 사용량은 각각 114.8 MB, 118.1MB 정도 사용했습니다.
 
-![glide_test](/Users/kkosang/woowa/woowa-writing/technical_glide.png)
+![glide_test](technical_glide.png)
 
 ### **Coil 테스트**
 
@@ -316,7 +316,7 @@ Test1에서는 Garbage Collection이 4번 등장하였으나, 리사이징 처�
 
 메모리 사용량은 각각 103.9MB, 93.2MB 정도 사용했습니다.
 
-![coil_test](/Users/kkosang/woowa/woowa-writing/technical_coil.png)
+![coil_test](technical_coil.png)
 
 ### **Picasso 테스트**
 
@@ -324,7 +324,7 @@ Coil과 마찬가지로 Test1에서는 Garbage Collection이 4번 등장하였�
 
 메모리 사용량은 각각 120.7MB, 101.8MB 정도 사용했습니다.
 
-![picasso_test](/Users/kkosang/woowa/woowa-writing/technical_picasso.png)
+![picasso_test](technical_picasso.png)
 
 # 요약 및 마무리
 
